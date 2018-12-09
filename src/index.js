@@ -4,15 +4,25 @@
  动画callback只支持1.x版本的TransitionGroup
  */
 
-class Person {
-    constructor(name){
-        this.name = name;
-    }
-
-    getName(){
-        return this.name;
+class SingObject {
+    login(){
+        console.log('logon...')
     }
 }
+SingObject.getInstance = (function () {
+    let instance;
+    return function () {
+        if(!instance){
+            instance = new SingObject();
+        }
+        return instance
+    }
+})();
 
-let p = new Person('freya555666');
-console.log(p.getName());
+//测试
+let obj1 = SingObject.getInstance();
+obj1.login();
+
+let obj2 = SingObject.getInstance();
+obj2.login();
+console.log(obj1 === obj2); //true

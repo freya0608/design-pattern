@@ -24,4 +24,4 @@ obj1.login();
 
 let obj2 = SingObject.getInstance();
 obj2.login();
-console.log(obj1 === obj2);
+console.log(obj1 === obj2); //true
