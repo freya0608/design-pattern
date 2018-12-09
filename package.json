@@ -4,7 +4,8 @@
   "description": "design-pattern-js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./webpack.dev.config.js --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/freya0608/design-pattern/issues"
   },
-  "homepage": "https://github.com/freya0608/design-pattern#readme"
+  "homepage": "https://github.com/freya0608/design-pattern#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.0",
+    "babel-loader": "^8.0.4"
+  }
 }
