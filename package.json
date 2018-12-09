@@ -18,13 +18,17 @@
   },
   "homepage": "https://github.com/freya0608/design-pattern#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "@babel/core": "^7.2.0",
-    "babel-loader": "^8.0.4"
+    "@babel/core": "^7.2.0"
   }
 }

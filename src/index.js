@@ -4,4 +4,15 @@
  动画callback只支持1.x版本的TransitionGroup
  */
 
-console.log('hshsh49898z')
+class Person {
+    constructor(name){
+        this.name = name;
+    }
+
+    getName(){
+        return this.name;
+    }
+}
+
+let p = new Person('freya555666');
+console.log(p.getName());
